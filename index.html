@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="ThisShouldLiveInCouchDB/app.js"></script>	
+	</head>
+	<body ng-app="couchApp" ng-controller="testController">
+		<div ng-bind="binding1"></div>
+		<input type="text" ng-model="binding2"/>
+		<div ng-model="binding3"/>
+		<input type="text" ng-model="binding4" ng-model-options="{debounce: 500}"/>
+	</body>
+</html>
